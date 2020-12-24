@@ -1,0 +1,97 @@
+.side-bar {
+  &:not(:last-child) {
+    border-bottom: 1px solid rgb(48, 47, 47);
+  }
+
+  .side-bar-item {
+    padding: 20px 0;
+
+
+    .sidenav-list {
+      margin-right: 2rem;
+      transition: all 0.35s ease-in;
+      list-style-type: none;
+
+      li {
+        position: relative;
+        padding: 1.2rem 2rem 1.2rem 2rem;
+
+        a {
+          color: $textColor;
+          font-size: 1.4rem;
+
+          i {
+            width: 2rem;
+          }
+
+          .pull-right-corner {
+            position: absolute;
+            right: 1rem;
+
+          }
+        }
+
+        &:hover {
+          transition: all 0.35s ease-in;
+          background-color: $primary-light;
+          border-top-right-radius: 25px;
+          border-bottom-right-radius: 25px;
+          color: $primary-color;
+        }
+      }
+
+    }
+
+
+    .add {
+      @include center();
+      flex-direction: row;
+      padding: 5px 20px;
+      margin: 10px;
+      border: none;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      background-color: transparent;
+      color: $primary-color;
+
+      span {
+        font-size: 1.5rem;
+        margin: 0 10px;
+      }
+
+      i {
+        width: 20px;
+      }
+
+      &:hover {
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
+      }
+    }
+
+    .item {
+      font-size: 1.5rem;
+      @include flex();
+      padding: 5px 15px;
+      color: $textColor;
+      transition: all 0.35s ease-in;
+
+      .label {
+        span {
+          margin: 0 10px;
+        }
+      }
+
+      &:hover {
+        background-color: $secondary-light;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        color: $primary-color;
+      }
+    }
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: $borderColor;
+  }
+}

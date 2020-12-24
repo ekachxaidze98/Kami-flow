@@ -1,0 +1,58 @@
+.filter-section {
+  @include flex();
+
+  .chip-list {
+    @include center();
+    flex-direction: row;
+
+    .chip {
+      background-color: $light-gray;
+      border-radius: 25px;
+      padding: 3px 8px;
+      margin: 0 10px;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        font-size: 1.5rem;
+      }
+
+      i {
+        font-size: 1.5rem;
+        color: $gray;
+        margin-left: 5px;
+      }
+    }
+
+    .add-filter {
+      border-style: dashed;
+      background-color: transparent;
+      border-width: 1px;
+      color: #A4A4A4;
+
+      i {
+        padding-right: .8rem;
+      }
+    }
+  }
+
+  .filters {
+    @include center();
+    flex-direction: row;
+
+    .filter-btn {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin: 0 70px;
+      color: #3B3C3F;
+    }
+
+    i {
+      margin: 0 10px;
+      color: $textColor;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.document-list-section {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+
+  .sort {
+    color: $textColor;
+    font-size: 1.4rem;
+  }
+
+  .task {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 0.5rem;
+
+    .icon-orange {
+      background-color: $orange !important;
+
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      color: $white;
+      background-color: $primary-light;
+      border-radius: 50%;
+      @include center();
+
+    }
+    .about {
+      margin-left: 5px;
+      text-align: left;
+      h5 {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+
+      span {
+        color: $lightGrayTextColor;
+        font-size: 1.4rem;
+      }
+
+    }
+
+    .state {
+      margin-left: 20px;
+      text-align: right;
+
+      h5 {
+        color: #000;
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: #000;
+      }
+
+      span {
+        border-radius: 5px;
+        color: $white;
+        padding: 4px;
+        background-color: $primary-color;
+      }
+
+      .done {
+        background-color: #88AD5C;
+      }
+
+      .to-do {
+        background-color: #767676;
+      }
+    }
+  }
+
+}
